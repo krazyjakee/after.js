@@ -10,13 +10,18 @@
   },
   "dependencies": {
     "@jaredpalmer/after": "^0.5.2",
+    "autodux": "^4.0.0",
     "express": "^4.16.2",
     "raf": "^3.4.0",
     "razzle": "^2.0.0-alpha.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
-    "react-router-dom": "^4.2.2"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "redux-connect-decorator": "^0.2.1",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "razzle-dev-utils": "^2.4.0",

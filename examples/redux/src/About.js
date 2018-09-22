@@ -1,13 +1,22 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { actions } from './reducers';
 
 class About extends React.Component {
-  static async getInitialProps({ req, res, match, history, location, ...ctx }) {
-    return { stuff: 'more stuffs' };
-  }
   render() {
-    console.log(this.props);
-    return this.props.stuff ? <div>about</div> : null;
+    return (
+      <div
+        onClick={() => {
+          this.props.increment();
+        }}
+      >
+        about {this.props.counter.count}
+      </div>
+    );
   }
 }
 
-export default About;
+export default connect(
+  state => state,
+  actions
+)(About);
